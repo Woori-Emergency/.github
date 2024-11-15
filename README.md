@@ -1,4 +1,6 @@
 # Woori FISA 3기 최종 프로젝트 7조 - "WeER" <br>
+<img src="https://github.com/user-attachments/assets/519b369b-92c8-47ba-a169-f2fc298f65da" alt="weer_logo" width="700">
+
 ### ⚒️ 응급실 가용 병상 실시간 모니터링 및 예약 서비스 - 고가용성 클라우드 시스템 구축(HA) ⚒️
 
 <br>
@@ -12,7 +14,16 @@
 | 🚀 **DevOps**                                   | ![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)                                                                                                                                                                                                                                   |
 | ☁ **Amazon Web Services**                           | - **Compute:** Elastic Compute Cloud (Amazon EC2), Amazon EC2 Auto Scaling<br>- **Load Balancing:** Application Load Balancer (ALB)<br>- **Messaging:** Amazon Simple Email Service<br> - **Storage:** Amazon S3, Amazon Relational Database Service (Amazon RDS)<br> - **Networking & Content Delivery:** Amazon Route53, Amazon Certificate Manager<br> - **Monitoring & Management:** Amazon CloudWatch |
 
+## 👥 팀 소개 
+|<img src="https://avatars.githubusercontent.com/u/81280628?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/86951396?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/90691610?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/100770130?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/107031994?v=4" width="100" height="100"/>|
+|:-:|:-:|:-:|:-:|:-:|
+|[@손대현](https://github.com/DaeHyeonSon)|[@이아영](https://github.com/ayleeee)|[@이석철](https://github.com/SeokCheol-Lee)|[@박웅빈](https://github.com/Ungbbi)|[@박정주](https://github.com/gorapang)|
+
+
 ## 📁 Project
+**소속:** 우리FISA 3기 클라우드 엔지니어링  <br>
+**개발 기간:** 2024.10.24 ~ 2024.12.12 <br><br>
+
 최근 ‘응급실 뺑뺑이’ 문제로 인해 생명이 위급한 중증 환자들이 적절한 치료를 받지 못하는 상황이 빈번하게 발생하고 있습니다. 이를 해결하고자, **‘WeER’** 프로젝트는 실시간 응급실 병상 정보를 제공하는 고가용성 클라우드 시스템을 구축하여 긴급 상황에서 신속한 병상 확보를 지원하는 것을 목표로 합니다.
 
 **‘WeER’는** 클라우드 기반의 하이브리드 워크로드 환경을 도입하여, 사용자 접속이 급증하는 상황에서도 안정적인 서비스 제공이 가능하도록 설계되었습니다. 또한, 멀티 클라우드 DR(재해 복구) 환경을 구축하여 클라우드 전반의 중단 사태에도 대비하고자 합니다. 이는 최근 Microsoft 클라우드의 전체 다운타임과 같은 사고에 대응하기 위해 AWS와 GCP를 함께 사용하는 멀티 클라우드 환경을 통해 중단 없는 서비스 제공을 목표로 하고 있습니다.
