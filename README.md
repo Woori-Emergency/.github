@@ -26,12 +26,12 @@
 
 | 페이지 | 스크린샷 | 구현 기능 |
 |--------|----------|-----------|
-| 메인 페이지 | <img src="./screenshots/main.png" width="300" alt="메인 페이지"/> | - 지도에 현재 가용 가능한 응급실 표시  <br>- 거리순 응급실 조회<br>- 필터링순 응급실 조회 |
-| 거리순 응급실 조회 | <img src="./screenshots/products.png" width="300" alt="거리순 응급실 조회"/> | - 상품 필터링<br>- 정렬 기능<br>- 페이지네이션 |
-| 필터링별 응급실 조회 | <img src="./screenshots/product-detail.png" width="300" alt="필터링별 응급실 조회"/> | - 상품 정보 표시<br>- 옵션 선택<br>- 장바구니 담기 |
+| 메인 페이지 | <img src="https://github.com/user-attachments/assets/fca37d13-4156-40a7-a92b-6946f5e3df8d" width="300" alt="메인 페이지"/> | - 지도에 현재 가용 가능한 응급실 표시  <br>- 거리순 응급실 조회<br>- 필터링순 응급실 조회 |
+| 거리순 응급실 조회 | <img src="https://github.com/user-attachments/assets/599e05fc-58b0-4efa-b5e8-80c31b4e227b" width="300" alt="거리순 응급실 조회"/> | - 상품 필터링<br>- 정렬 기능<br>- 페이지네이션 |
+| 필터링별 응급실 조회 | <img src="https://github.com/user-attachments/assets/348197cd-4690-41dd-9a86-9d2dc86c9ee1" width="300" alt="필터링별 응급실 조회"/> | - 상품 정보 표시<br>- 옵션 선택<br>- 장바구니 담기 |
 | 환자 정보 입력 | <img src="./screenshots/cart.png" width="300" alt="환자 정보 입력"/> | - 수량 조절<br>- 상품 삭제<br>- 금액 계산 |
-| 환자 내역 페이지 | <img src="./screenshots/checkout.png" width="300" alt="환자 내역 페이지"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
-| 응급실 예약 조회 페이지 | <img src="./screenshots/checkout.png" width="300" alt="응급실 예약 조회 페이지"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
+| 환자 내역 페이지 | <img src="https://github.com/user-attachments/assets/97b329f6-da32-4f67-84f2-0195b5e1c6b3" width="300" alt="환자 내역 페이지"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
+| 응급실 예약 조회 페이지 | <img src="https://github.com/user-attachments/assets/dad8ff2f-ce35-4431-b319-219ca50d939f" width="300" alt="응급실 예약 조회 페이지"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
 | 관리자 대시보드 | <img src="./screenshots/checkout.png" width="300" alt="관리자 대시보드"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
 | 병원 측 승인/반려 페이지 | <img src="./screenshots/checkout.png" width="300" alt="병원 측 승인/반려 페이지"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
 
