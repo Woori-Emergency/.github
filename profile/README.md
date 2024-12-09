@@ -11,7 +11,7 @@
 | 🎥 **Monitoring & Logging** | ![Elastic Search](https://img.shields.io/badge/-ElasticSearch-005571?logo=elastic&logoColor=white) ![Kibana](https://img.shields.io/badge/-Kibana-005571?logo=Kibana&logoColor=white) ![Zipkin](https://img.shields.io/badge/-Zipkin-231F20)                                                                                                                                                               |
 | 🚀 **DevOps**                                   | ![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)                                                                                                                                                                                                                                   |
 | ☁ **Amazon Web Services**                           | - **Compute:** Elastic Compute Cloud (Amazon EC2), Amazon EC2 Auto Scaling<br>- **Load Balancing:** Application Load Balancer (ALB)<br>- **Messaging:** Amazon Simple Email Service<br> - **Storage:** Amazon S3, Amazon Relational Database Service (Amazon RDS)<br> - **Networking & Content Delivery:** Amazon Route53, Amazon Certificate Manager<br> - **Monitoring & Management:** Amazon CloudWatch |
-
+ 
 ## 📁 Project
 최근 ‘응급실 뺑뺑이’ 문제로 인해 생명이 위급한 중증 환자들이 적절한 치료를 받지 못하는 상황이 빈번하게 발생하고 있습니다. 이를 해결하고자, **‘WeER’** 프로젝트는 실시간 응급실 병상 정보를 제공하는 고가용성 클라우드 시스템을 구축하여 긴급 상황에서 신속한 병상 확보를 지원하는 것을 목표로 합니다.
 
@@ -29,7 +29,8 @@
 
 **| 인프라 아키텍처**
 
-![image](https://github.com/user-attachments/assets/bc05ea86-0de9-4487-8fb7-039ccd70d132)
+![image](https://github.com/user-attachments/assets/4c0bc38a-102d-49e5-a885-1ad58d6697ce)
+
 
 WeER 프로젝트의 인프라 아키텍처는 **고가용성(HA)과** **멀티 클라우드 DR(재해 복구)를** 위해 AWS와 GCP를 결합하여 구축되었습니다. 이 시스템은 사용자 요청의 안정적인 처리와 데이터 보호를 목표로 설계되었습니다.
 
@@ -43,7 +44,7 @@ WeER 프로젝트의 인프라 아키텍처는 **고가용성(HA)과** **멀티 
 <br>
 
 **| 서비스 아키텍처**
-![image](https://github.com/user-attachments/assets/c7fb0f10-34b1-4c1a-85ad-027a1df6f3fa)
+![image](https://github.com/user-attachments/assets/e8a3a8d4-1177-4cb6-a6b7-b81a3ac98568)
 
 백엔드 서버는 **Spring Framework**로 구축되었으며, **Spring Security**로 보안을 강화하고, **Spring Data JPA**를 통해 MySQL 데이터베이스와 상호작용합니다. 정기적인 데이터 업데이트와 처리는 **Spring Batch**를 통해 자동화되며, 서버는 Kubernetes 환경에서 운영되어 높은 가용성과 확장성을 제공합니다.
 
