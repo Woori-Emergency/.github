@@ -1,29 +1,19 @@
 # Woori FISA 3기 최종 프로젝트 7조 - "WeER" <br>
-<img src="https://github.com/user-attachments/assets/519b369b-92c8-47ba-a169-f2fc298f65da" alt="weer_logo" width="700">
-
-### ⚒️ 응급실 가용 병상 실시간 모니터링 및 예약 서비스 - 고가용성 클라우드 시스템 구축(HA) ⚒️
+### 🏥 응급실 가용 병상 실시간 모니터링 및 예약 서비스 - 고가용성 클라우드 시스템 구축(HA) 🏥
 
 <br>
 
 | 🛠Tech Stack                                         |                                                                                                                                                                                                                                                                                                                                                                                                            |
 | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🌐 **Frontend**                                     | ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white) ![Styled-Components](https://img.shields.io/badge/-styled--components-DB7093?logo=styled-components&logoColor=white)                                                                                                                           |
+| 🌐 **Frontend**                                     | ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white) ![Styled Components](https://img.shields.io/badge/-styled--components-DB7093?logo=styled-components&logoColor=white)                                                                                                                            |
 | 🖥 **Backend**                                       | ![Java](https://img.shields.io/badge/-Java-007396?logo=Java&logoColor=white) ![SpringBoot](https://img.shields.io/badge/-Springboot-6DB33F?logo=Springboot&logoColor=white) ![SpringCloud](https://img.shields.io/badge/-SpringCloud-6DB33F)                                                                                                                                                               |
 | 🔄 **Middleware**                                   | ![Redis](https://img.shields.io/badge/-Redis-DC382D?logo=redis&logoColor=white) ![Confluent Kafka](https://img.shields.io/badge/-Confluent%20Kafka-231F20?logo=apache-kafka&logoColor=white)                                                                                                                                                                                                               |
 | 🎥 **Monitoring & Logging** | ![Elastic Search](https://img.shields.io/badge/-ElasticSearch-005571?logo=elastic&logoColor=white) ![Kibana](https://img.shields.io/badge/-Kibana-005571?logo=Kibana&logoColor=white) ![Zipkin](https://img.shields.io/badge/-Zipkin-231F20)                                                                                                                                                               |
-| 🚀 **DevOps**                                   | ![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)                                                                                                                                                                                                                                   |
-| ☁ **Amazon Web Services**                           | - **Compute:** Elastic Compute Cloud (Amazon EC2), Amazon EC2 Auto Scaling<br>- **Load Balancing:** Application Load Balancer (ALB)<br>- **Messaging:** Amazon Simple Email Service<br> - **Storage:** Amazon S3, Amazon Relational Database Service (Amazon RDS)<br> - **Networking & Content Delivery:** Amazon Route53, Amazon Certificate Manager<br> - **Monitoring & Management:** Amazon CloudWatch |
-
-## 👥 팀 소개 
-|<img src="https://avatars.githubusercontent.com/u/81280628?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/86951396?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/90691610?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/100770130?v=4" width="100" height="100"/>|<img src="https://avatars.githubusercontent.com/u/107031994?v=4" width="100" height="100"/>|
-|:-:|:-:|:-:|:-:|:-:|
-|[@손대현](https://github.com/DaeHyeonSon)|[@이아영](https://github.com/ayleeee)|[@이석철](https://github.com/SeokCheol-Lee)|[@박웅빈](https://github.com/Ungbbi)|[@박정주](https://github.com/gorapang)|
-
-
+| 🚀 **DevOps**                                   | ![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![SonarQube](https://img.shields.io/badge/-SonarQube-4E9BCDlogo=sonarqube&logoColor=white)                                                                                                                                                                                                                                  |
+| ☁ **Amazon Web Services**                           | - **Compute:** Elastic Compute Cloud (Amazon EC2), Amazon EC2 Auto Scaling<br>- **Load Balancing:** Application Load Balancer (ALB)<br>- **Messaging:** Amazon Simple Email Service<br> - **Storage:** Amazon S3, Amazon Relational Database Service (Amazon RDS)<br> - **Networking & Content Delivery:** Amazon Route53, Amazon Certificate Manager, Amazon Site-to-Site VPN<br> - **Monitoring & Management:** Amazon CloudWatch |
+☁ **Google Cloud Platform**                           | - **Compute:** GCP Compute Engine,  GCP Instance Groups <br>- **Load Balancing:** GCP Load Balancing<br> - **Storage:** Google Cloud Storage,  Cloud SQL, Artifact Registry<br> - **Networking & Content Delivery:** Cloud VPN, Cloud DNS, Certificate Manager<br> - **Monitoring & Management:** Cloud Logging |
+ 
 ## 📁 Project
-**소속:** 우리FISA 3기 클라우드 엔지니어링  <br>
-**개발 기간:** 2024.10.24 ~ 2024.12.12 <br><br>
-
 최근 ‘응급실 뺑뺑이’ 문제로 인해 생명이 위급한 중증 환자들이 적절한 치료를 받지 못하는 상황이 빈번하게 발생하고 있습니다. 이를 해결하고자, **‘WeER’** 프로젝트는 실시간 응급실 병상 정보를 제공하는 고가용성 클라우드 시스템을 구축하여 긴급 상황에서 신속한 병상 확보를 지원하는 것을 목표로 합니다.
 
 **‘WeER’는** 클라우드 기반의 하이브리드 워크로드 환경을 도입하여, 사용자 접속이 급증하는 상황에서도 안정적인 서비스 제공이 가능하도록 설계되었습니다. 또한, 멀티 클라우드 DR(재해 복구) 환경을 구축하여 클라우드 전반의 중단 사태에도 대비하고자 합니다. 이는 최근 Microsoft 클라우드의 전체 다운타임과 같은 사고에 대응하기 위해 AWS와 GCP를 함께 사용하는 멀티 클라우드 환경을 통해 중단 없는 서비스 제공을 목표로 하고 있습니다.
@@ -31,6 +21,19 @@
 **‘WeER’는** 시간대별로 변동하는 사용자 수요에 따라 유연한 확장과 축소가 가능하며, 이를 통해 응급 상황에서 환자들이 신속하게 적절한 병상에 배정되어 치료를 받을 수 있도록 하여 응급 의료 시스템의 효율성을 높이는 데 기여할 것입니다.
 
 # 🌐 Front-End 
+
+# 화면 구성
+
+| 페이지 | 스크린샷 | 구현 기능 |
+|--------|----------|-----------|
+| 메인 페이지 | <img src="./screenshots/main.png" width="300" alt="메인 페이지"/> | - 지도에 현재 가용 가능한 응급실 표시  <br>- 거리순 응급실 조회<br>- 필터링순 응급실 조회 |
+| 거리순 응급실 조회 | <img src="./screenshots/products.png" width="300" alt="거리순 응급실 조회"/> | - 상품 필터링<br>- 정렬 기능<br>- 페이지네이션 |
+| 필터링별 응급실 조회 | <img src="./screenshots/product-detail.png" width="300" alt="필터링별 응급실 조회"/> | - 상품 정보 표시<br>- 옵션 선택<br>- 장바구니 담기 |
+| 환자 정보 입력 | <img src="./screenshots/cart.png" width="300" alt="환자 정보 입력"/> | - 수량 조절<br>- 상품 삭제<br>- 금액 계산 |
+| 환자 내역 페이지 | <img src="./screenshots/checkout.png" width="300" alt="환자 내역 페이지"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
+| 응급실 예약 조회 페이지 | <img src="./screenshots/checkout.png" width="300" alt="응급실 예약 조회 페이지"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
+| 관리자 대시보드 | <img src="./screenshots/checkout.png" width="300" alt="관리자 대시보드"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
+| 병원 측 승인/반려 페이지 | <img src="./screenshots/checkout.png" width="300" alt="병원 측 승인/반려 페이지"/> | - 배송지 입력<br>- 결제 수단 선택<br>- 주문 완료 |
 
 # 👨🏻‍💻 Back-End
 
@@ -40,7 +43,8 @@
 
 **| 인프라 아키텍처**
 
-![image](https://github.com/user-attachments/assets/bc05ea86-0de9-4487-8fb7-039ccd70d132)
+![image](https://github.com/user-attachments/assets/4c0bc38a-102d-49e5-a885-1ad58d6697ce)
+
 
 WeER 프로젝트의 인프라 아키텍처는 **고가용성(HA)과** **멀티 클라우드 DR(재해 복구)를** 위해 AWS와 GCP를 결합하여 구축되었습니다. 이 시스템은 사용자 요청의 안정적인 처리와 데이터 보호를 목표로 설계되었습니다.
 
@@ -54,7 +58,7 @@ WeER 프로젝트의 인프라 아키텍처는 **고가용성(HA)과** **멀티 
 <br>
 
 **| 서비스 아키텍처**
-![image](https://github.com/user-attachments/assets/c7fb0f10-34b1-4c1a-85ad-027a1df6f3fa)
+![image](https://github.com/user-attachments/assets/e8a3a8d4-1177-4cb6-a6b7-b81a3ac98568)
 
 백엔드 서버는 **Spring Framework**로 구축되었으며, **Spring Security**로 보안을 강화하고, **Spring Data JPA**를 통해 MySQL 데이터베이스와 상호작용합니다. 정기적인 데이터 업데이트와 처리는 **Spring Batch**를 통해 자동화되며, 서버는 Kubernetes 환경에서 운영되어 높은 가용성과 확장성을 제공합니다.
 
