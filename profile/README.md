@@ -10,7 +10,7 @@
 | 🎥 **Monitoring & Logging** | ![Elastic Search](https://img.shields.io/badge/-ElasticSearch-005571?logo=elastic&logoColor=white) ![Kibana](https://img.shields.io/badge/-Kibana-005571?logo=Kibana&logoColor=white) ![Prometheus](https://img.shields.io/badge/-Prometheus-E6522C?logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/-Grafana-F46800?logo=grafana&logoColor=white)                                                                                                                                                             |
 | 🚀 **DevOps**                                   | ![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![SonarQube](https://img.shields.io/badge/-SonarQube-4E9BCD?logo=sonarqube&logoColor=white) |                                                                                                                                                                                                                           |
 | ☁ **Amazon Web Services**                           | - **Compute:** Elastic Compute Cloud (Amazon EC2), Amazon EC2 Auto Scaling, AWS EKS, AWS Lambda<br>- **Load Balancing:** Application Load Balancer (ALB)<br> - **Storage:** Amazon S3, Amazon Relational Database Service (Amazon RDS)<br> - **Networking & Content Delivery:** Amazon Route53, Amazon Certificate Manager, Amazon Site-to-Site VPN<br> - **Monitoring & Management:** Amazon CloudWatch |
-☁ **Google Cloud Platform**                           | - **Compute:** GCP Compute Engine,  GCP Instance Groups <br>- **Load Balancing:** GCP Load Balancing<br> - **Storage:** Google Cloud Storage,  Cloud SQL, Artifact Registry<br> - **Networking & Content Delivery:** Cloud VPN, Cloud DNS, Certificate Manager<br> - **Monitoring & Management:** Cloud Logging |
+☁ **Google Cloud Platform**                           | - **Compute:** GCP Compute Engine,  GCP Instance Groups <br>- **Load Balancing:** GCP Load Balancing<br> - **Storage:** Google Cloud Storage,  Cloud SQL, Artifact Registry<br> - **Networking & Content Delivery:** Cloud VPN, Cloud DNS, Certificate Manager, Cloud Armor<br> - **Monitoring & Management:** Cloud Logging |
  
 ## 📁 Project
 최근 ‘응급실 뺑뺑이’ 문제로 인해 생명이 위급한 중증 환자들이 적절한 치료를 받지 못하는 상황이 빈번하게 발생하고 있습니다. 이를 해결하고자, **‘WeER’** 프로젝트는 실시간 응급실 병상 정보를 제공하는 고가용성 클라우드 시스템을 구축하여 긴급 상황에서 신속한 병상 확보를 지원하는 것을 목표로 합니다.
@@ -28,7 +28,7 @@
 
 | 페이지 | 스크린샷 | 구현 기능 |
 |---------------------------|--------------------------|--------------------------|
-| 메인 페이지 | <img src="https://github.com/user-attachments/assets/fca37d13-4156-40a7-a92b-6946f5e3df8d" width="300" alt="메인 페이지"/> | - 지도에 현재 가용 가능한 응급실 표시  <br>- 거리순 응급실 조회<br>- 필터링순 응급실 조회<br> - 응급실 이름 검색으로 현 위치에서 거리 및 소요 시간 확인 |
+| 메인 페이지 | <img src="https://github.com/user-attachments/assets/8e04f9ad-d34e-4d98-a24d-5aa860cc9e3b" width="300" alt="메인 페이지"/> | - 지도에 현재 가용 가능한 응급실 표시  <br>- 거리순 응급실 조회<br>- 필터링순 응급실 조회<br> - 응급실 이름 검색으로 현 위치에서 거리 및 소요 시간 확인 |
 | 거리순 응급실 조회 페이지| <img src="https://github.com/user-attachments/assets/599e05fc-58b0-4efa-b5e8-80c31b4e227b" width="300" alt="거리순 응급실 조회"/> | - 현재 위치에서 가장 가까운 응급실 확인 <br>- 현재 장비 확인<br> - 예약 기능 |
 | 필터링별 응급실 조회 페이지| <img src="https://github.com/user-attachments/assets/348197cd-4690-41dd-9a86-9d2dc86c9ee1" width="300" alt="필터링별 응급실 조회"/> | - 병원 필터링 조건 제시<br>- 현재 상황에 맞는 응급실 확인 가능 |
 | 환자 정보 입력 페이지 | <img src="https://github.com/user-attachments/assets/ba545f3b-c18a-49c8-aa7a-9def84c9eef9" width="300" alt="환자 정보 입력"/> | - 이송할 환자 상태 정보 입력 |
@@ -51,7 +51,7 @@
 WeER 프로젝트의 인프라 아키텍처는 **고가용성(HA)과** **멀티 클라우드 DR(재해 복구)를** 위해 AWS와 GCP를 결합하여 구축되었습니다. 이 시스템은 사용자 요청의 안정적인 처리와 데이터 보호를 목표로 설계되었습니다.
 
 - AWS 인프라에서는 Amazon Route 53, AWS WAF, Amazon CloudFront를 통해 사용자 요청을 최적의 리전으로 라우팅하고 보안을 강화합니다. 웹 및 애플리케이션 서버는 다중 가용 영역에 배치되어 있으며, Application Load Balancer (ALB)가 사용자 요청을 여러 EC2 웹 서버에 분산하여 처리합니다. 데이터는 Aurora DB MySQL Connector를 통해 글로벌하게 동기화되어 병상 정보를 신속하게 조회할 수 있습니다. AWS Transit Gateway는 리전 간 네트워크 통신을 관리하며, CloudWatch와 AWS KMS가 실시간 모니터링과 데이터 보안을 제공합니다. 또한, VPN Gateway를 통해 온프레미스 데이터 센터와의 안전한 연결이 가능합니다.
-- GCP 인프라에서는 Cloud Router, Cloud VPN, Cloud Armor를 통해 AWS와의 보안 통신을 지원하며, Compute Engine, Cloud SQL, Cloud Storage로 데이터 처리와 저장을 담당합니다. Database Migration Service를 통해 AWS와 데이터를 동기화하고, 재해 발생 시 GCP로 트래픽을 자동 전환하여 서비스 연속성을 보장합니다. 또한, Operations Suite를 통해 애플리케이션과 인프라의 상태를 실시간으로 모니터링하여 문제 발생 시 즉각적으로 대응할 수 있습니다.
+- GCP 인프라에서는 Cloud Router, Cloud VPN, Cloud Armor를 통해 AWS와의 보안 통신을 지원하며, Compute Engine, Cloud SQL, Cloud Storage로 데이터 처리와 저장을 담당합니다. Database Migration Service를 통해 AWS와 데이터를 동기화하고, 재해 발생 시 Route53의 failover 기능으로 GCP로 트래픽을 자동 전환하여 서비스 연속성을 보장합니다. 
 
 이 아키텍처는 단일 클라우드 장애에도 중단 없는 서비스를 제공할 수 있도록 AWS와 GCP의 보안 및 모니터링 도구를 결합하여 데이터 보호와 성능 최적화를 달성합니다.
 
@@ -64,7 +64,7 @@ WeER 프로젝트의 인프라 아키텍처는 **고가용성(HA)과** **멀티 
 
 백엔드 서버는 **Spring Framework**로 구축되었으며, **Spring Security**로 보안을 강화하고, **Spring Data JPA**를 통해 MySQL 데이터베이스와 상호작용합니다. 정기적인 데이터 업데이트와 처리는 **Spring Batch**를 통해 자동화되며, 서버는 Kubernetes 환경에서 운영되어 높은 가용성과 확장성을 제공합니다.
 
-**Redis**를 캐시로 사용하여 병상 데이터를 실시간으로 제공하며, **Prometheus**와 **Grafana**로 서버 상태를 모니터링하여 문제 발생 시 신속히 대응합니다. 로그 관리는 **ELK Stack**을 통해 이루어지며, 시스템 활동을 추적하여 안정성을 높입니다.
+**Prometheus**와 **Grafana**로 서버 상태를 모니터링하여 문제 발생 시 신속히 대응합니다. 로그 관리는 **ELK Stack**을 통해 이루어지며, 시스템 활동을 추적하여 안정성을 높입니다.
 
 CI/CD 파이프라인은 **Jenkins와 ArgoCD**를 통해 자동 빌드와 배포를 지원하며, **Docker와 SonarQube**로 애플리케이션을 컨테이너화하고 코드 품질을 관리합니다. 이 아키텍처는 사용자 수요에 따라 유연한 확장 및 축소가 가능하며, 다중 클라우드 환경에서 재해 복구 능력을 통해 중단 없는 서비스를 제공합니다.
 
