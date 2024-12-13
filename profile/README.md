@@ -24,18 +24,18 @@
 ## 🏥 개요
 본 프로젝트의 프론트엔드는 긴급 상황에서의 정보 가독성 향상에 중점을 두었습니다. 기존 상황 종합판의 정보 과잉 문제를 해결하고자, 사용자 중심의 UI/UX 개선을 진행했습니다. 특히 긴박한 순간에도 필요한 정보를 즉각적으로 파악할 수 있도록 직관적인 인터페이스를 구현했으며, 이를 통해 의사결정 속도와 업무 효율성을 향상시킬 수 있을 것으로 판단됩니다.
 
-## 📑 화면 구성
+## 📱 화면 구성
 
 | 페이지 | 스크린샷 | 구현 기능 |
-|---------------------------|--------------------------|--------------------------|
-| 메인 페이지 | <img src="https://github.com/user-attachments/assets/8e04f9ad-d34e-4d98-a24d-5aa860cc9e3b" width="300" alt="메인 페이지"/> | - 지도에 현재 가용 가능한 응급실 표시  <br>- 거리순 응급실 조회<br>- 필터링순 응급실 조회<br> - 응급실 이름 검색으로 현 위치에서 거리 및 소요 시간 확인 |
-| 거리순 응급실 조회 페이지| <img src="https://github.com/user-attachments/assets/599e05fc-58b0-4efa-b5e8-80c31b4e227b" width="300" alt="거리순 응급실 조회"/> | - 현재 위치에서 가장 가까운 응급실 확인 <br>- 현재 장비 확인<br> - 예약 기능 |
-| 필터링별 응급실 조회 페이지| <img src="https://github.com/user-attachments/assets/348197cd-4690-41dd-9a86-9d2dc86c9ee1" width="300" alt="필터링별 응급실 조회"/> | - 병원 필터링 조건 제시<br>- 현재 상황에 맞는 응급실 확인 가능 |
-| 환자 정보 입력 페이지 | <img src="https://github.com/user-attachments/assets/ba545f3b-c18a-49c8-aa7a-9def84c9eef9" width="300" alt="환자 정보 입력"/> | - 이송할 환자 상태 정보 입력 |
-| 환자 내역 페이지 | <img src="https://github.com/user-attachments/assets/97b329f6-da32-4f67-84f2-0195b5e1c6b3" width="300" alt="환자 내역 페이지"/> | - 현재 이송중인 환자 정보<br>- 이송 완료한 환자 정보 리스트 <br>- 이송 완료 기능|
-| 응급실 예약 조회 페이지 | <img src="https://github.com/user-attachments/assets/dad8ff2f-ce35-4431-b319-219ca50d939f" width="300" alt="응급실 예약 조회 페이지"/> | - 현재 이송중인 환자 정보<br>- 해당 환자를 위한 응급실 예약<br>- 예약 승인/반려 확인<br> - 이송 완료 기능 |
-| 관리자 대시보드 페이지 | <img src="https://github.com/user-attachments/assets/9c96b1cd-88a7-4dca-9ba8-479c37abc651" width="300" alt="관리자 대시보드"/> | - 회원 정보 확인 <br>- 회원가입 요청 리스트 확인 <br>- 회원가입 승인/반려 |
-| 병원 측 승인/반려 페이지 | <img src="https://github.com/user-attachments/assets/8f103fcf-2f19-4223-9620-655e9e5eeb09" width="300" alt="병원 측 승인/반려 페이지"/> | - 요청 들어온 예약 확인<br>- 예약 요청 승인/반려 |
+|--------------------------------|--------------------------|--------------------------|
+| 🏠 메인 화면 | <img src="https://github.com/user-attachments/assets/8e04f9ad-d34e-4d98-a24d-5aa860cc9e3b" width="300" alt="메인 페이지"/> | - 🗺️ 지도에 현재 가용 가능한 응급실 표시 <br>- 📍 거리순 응급실 조회<br>- 🔍 필터링순 응급실 조회<br> - 🏥 응급실 이름 검색으로 현 위치에서 거리 및 소요 시간 확인 |
+| 📍 거리순 응급실 조회| <img src="https://github.com/user-attachments/assets/599e05fc-58b0-4efa-b5e8-80c31b4e227b" width="300" alt="거리순 응급실 조회"/> | - 🚶‍♂️ 현재 위치에서 가장 가까운 응급실 확인 <br>- 🔧 현재 장비 확인<br> - 📅 예약 기능 |
+| 🔍 필터링별 응급실 조회 | <img src="https://github.com/user-attachments/assets/348197cd-4690-41dd-9a86-9d2dc86c9ee1" width="300" alt="필터링별 응급실 조회"/> | - ⚕️ 병원 필터링 조건 제시<br>- 🏥 현재 상황에 맞는 응급실 확인 가능 |
+| 👤 환자 정보 입력| <img src="https://github.com/user-attachments/assets/ba545f3b-c18a-49c8-aa7a-9def84c9eef9" width="300" alt="환자 정보 입력"/> | - 📝 이송할 환자 상태 정보 입력 |
+| 📋 환자 내역 페이지 | <img src="https://github.com/user-attachments/assets/97b329f6-da32-4f67-84f2-0195b5e1c6b3" width="300" alt="환자 내역 페이지"/> | - 🚑 현재 이송중인 환자 정보<br>- 📊 이송 완료한 환자 정보 리스트 <br>- ✅ 이송 완료 기능|
+| 📅 응급실 예약 조회| <img src="https://github.com/user-attachments/assets/dad8ff2f-ce35-4431-b319-219ca50d939f" width="300" alt="응급실 예약 조회 페이지"/> | - 🏃 현재 이송중인 환자 정보<br>- 🔖 해당 환자를 위한 응급실 예약<br>- ✔️ 예약 승인/반려 확인<br> - ✅ 이송 완료 기능 |
+| 👨‍💼 관리자 대시보드| <img src="https://github.com/user-attachments/assets/9c96b1cd-88a7-4dca-9ba8-479c37abc651" width="300" alt="관리자 대시보드"/> | - 👥 회원 정보 확인 <br>- 📝 회원가입 요청 리스트 확인 <br>- ✅ 회원가입 승인/반려 |
+| 🏥 병원 측 승인/반려 | <img src="https://github.com/user-attachments/assets/8f103fcf-2f19-4223-9620-655e9e5eeb09" width="300" alt="병원 측 승인/반려 페이지"/> | - 📋 요청 들어온 예약 확인<br>- ✔️ 예약 요청 승인/반려 |
 
 # 👨🏻‍💻 Back-End
 
